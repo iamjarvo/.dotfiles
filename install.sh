@@ -5,4 +5,4 @@ link_file() {
 }
 
 link_file ".vimrc"
-link_file ".vim"
+cp -r $PWD/.vim ~/.
