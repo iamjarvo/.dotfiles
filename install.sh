@@ -6,4 +6,5 @@ link_file() {
 
 link_file ".vimrc"
 link_file ".slate"
+link_file ".gemrc"
 cp -r $PWD/.vim ~/.
