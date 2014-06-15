@@ -5,4 +5,5 @@ link_file() {
 }
 
 link_file ".vimrc"
+link_file ".slate"
 cp -r $PWD/.vim ~/.
