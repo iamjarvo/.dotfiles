@@ -11,7 +11,9 @@ Plugin 'guns/vim-clojure-static'
 Plugin 'kien/ctrlp.vim'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-fugitive'
 Plugin 'vim-scripts/paredit.vim'
 
 " All of your Plugins must be added before the following line
@@ -21,6 +23,7 @@ set scrolloff=3         " keep 3 lines when scrolling
 set ai                  " set auto-indenting on for programming
 
 set showcmd             " display incomplete commands
+set noswapfile          " do no create swp files
 set nobackup            " do not keep a backup file
 set number              " show line numbers
 set ruler               " show the current row and column
