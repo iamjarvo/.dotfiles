@@ -21,6 +21,7 @@ call vundle#end()
 
 set scrolloff=3         " keep 3 lines when scrolling
 set ai                  " set auto-indenting on for programming
+set mouse=a             " Mouse support
 
 set showcmd             " display incomplete commands
 set noswapfile          " do no create swp files
