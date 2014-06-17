@@ -15,6 +15,7 @@ Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-fugitive'
+Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/paredit.vim'
 
 " All of your Plugins must be added before the following line
