@@ -52,6 +52,10 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=4
 
+" smart splitting
+set splitbelow
+set splitright
+
 " rainbow_parentheses.vim
 autocmd VimEnter * RainbowParenthesesToggle
 autocmd Syntax * RainbowParenthesesLoadRound
