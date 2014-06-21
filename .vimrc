@@ -7,6 +7,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'fortes/vim-railscasts'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'guns/vim-clojure-static'
 Plugin 'kien/ctrlp.vim'
