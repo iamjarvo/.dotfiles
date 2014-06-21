@@ -17,6 +17,7 @@ Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-markdown'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/paredit.vim'
 
@@ -44,7 +45,11 @@ set novisualbell        " turn off visual bell
 
 set backspace=indent,eol,start  " make that backspace key work the way it should
 
+" colors
+autocmd ColorScheme * highlight Visual ctermbg=236
+colorscheme railscasts
 syntax on               " turn syntax highlighting on by default
+
 filetype on             " detect type of file
 filetype indent on      " load indent file for specific file type
 
