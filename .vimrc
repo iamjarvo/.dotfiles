@@ -87,3 +87,6 @@ let g:rbpt_colorpairs = [
       \ ['red',         'firebrick3'],
       \ ]
 let g:rbpt_max = len(g:rbpt_colorpairs)
+
+" unhighlight searches
+nmap nh :noh<CR>
