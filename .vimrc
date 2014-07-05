@@ -13,6 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'guns/vim-clojure-static'
 Plugin 'kien/ctrlp.vim'
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
@@ -53,6 +54,7 @@ set backspace=indent,eol,start  " make that backspace key work the way it should
 " colors
 autocmd ColorScheme * highlight Visual ctermbg=236
 colorscheme railscasts
+set background="dark"
 syntax on               " turn syntax highlighting on by default
 
 filetype on             " detect type of file
@@ -92,3 +94,5 @@ let g:rbpt_max = len(g:rbpt_colorpairs)
 
 " unhighlight searches
 nmap nh :noh<CR>
+
+nmap ig :IndentGuidesToggle<CR>
