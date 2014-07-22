@@ -14,6 +14,7 @@ Plugin 'guns/vim-clojure-static'
 Plugin 'kien/ctrlp.vim'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
@@ -96,3 +97,10 @@ let g:rbpt_max = len(g:rbpt_colorpairs)
 nmap nh :noh<CR>
 
 nmap ig :IndentGuidesToggle<CR>
+
+" The Silver Searcher
+let g:ag_binary = system("which ag | xargs echo -n")
+if filereadable(g:ag_binary)
+  let g:ackprg = g:ag_binary . ' --nocolor --nogroup --column'
+    let g:ctrlp_user_command = g:ag_binary . ' %s -l --nocolor -g ""'
+endif
