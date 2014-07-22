@@ -8,7 +8,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'ekalinin/Dockerfile.vimr'
+Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'fortes/vim-railscasts'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'guns/vim-clojure-static'
