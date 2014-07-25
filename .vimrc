@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'fatih/vim-go'
 Plugin 'fortes/vim-railscasts'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'guns/vim-clojure-static'
