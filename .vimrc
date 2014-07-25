@@ -26,6 +26,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-vividchalk'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/paredit.vim'
 
@@ -55,7 +56,12 @@ set backspace=indent,eol,start  " make that backspace key work the way it should
 
 " colors
 autocmd ColorScheme * highlight Visual ctermbg=236
-colorscheme railscasts
+" gui settings
+if (&t_Co == 256 || has('gui_running'))
+  if ($TERM_PROGRAM == 'iTerm.app')
+    colorscheme vividchalk
+  endif
+endif
 set background="dark"
 syntax on               " turn syntax highlighting on by default
 
