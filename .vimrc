@@ -30,6 +30,7 @@ Plugin 'tpope/vim-leiningen'
 Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-vividchalk'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/paredit.vim'
 
