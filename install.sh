@@ -7,4 +7,5 @@ link_file() {
 link_file ".vimrc"
 link_file ".slate"
 link_file ".gemrc"
+link_file ".tmux.conf"
 cp -r $PWD/.vim ~/.
