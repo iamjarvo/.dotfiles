@@ -8,6 +8,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'bling/vim-airline'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'fatih/vim-go'
 Plugin 'fortes/vim-railscasts'
@@ -116,3 +117,7 @@ if filereadable(g:ag_binary)
   let g:ackprg = g:ag_binary . ' --nocolor --nogroup --column'
     let g:ctrlp_user_command = g:ag_binary . ' %s -l --nocolor -g ""'
 endif
+
+" vim-airline
+set laststatus=2
+let g:airline_powerline_fonts = 1
