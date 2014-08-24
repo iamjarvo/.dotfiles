@@ -15,9 +15,13 @@ Plugin 'fatih/vim-go'
 Plugin 'fortes/vim-railscasts'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'guns/vim-clojure-static'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'kaichen/vim-snipmate-ruby-snippets'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'rking/ag.vim'
@@ -25,6 +29,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'slim-template/vim-slim'
+Plugin 'tomtom/tlib_vim'
 Plugin 'tpope/vim-classpath'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-rails'
@@ -128,3 +133,6 @@ set term=xterm-256color " need this for airline to work in tmux
 iabbr bpry require'pry';binding.pry
 
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+
+" snipmate
+imap <C-t> <Plug>snipMateNextOrTrigger
