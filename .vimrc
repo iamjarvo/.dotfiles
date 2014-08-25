@@ -19,6 +19,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'ngmy/vim-rubocop'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
@@ -124,3 +125,5 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 
 iabbr bpry require'pry';binding.pry
+
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
