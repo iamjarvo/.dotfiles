@@ -136,3 +136,5 @@ let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
 " snipmate
 imap <C-t> <Plug>snipMateNextOrTrigger
+
+set colorcolumn=81
