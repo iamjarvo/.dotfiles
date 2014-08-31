@@ -132,7 +132,7 @@ set term=xterm-256color " need this for airline to work in tmux
 
 iabbr bpry require'pry';binding.pry
 
-let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+"let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
 " snipmate
 imap <C-t> <Plug>snipMateNextOrTrigger
