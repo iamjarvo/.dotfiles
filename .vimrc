@@ -54,6 +54,7 @@ set showcmd             " display incomplete commands
 set noswapfile          " do no create swp files
 set nobackup            " do not keep a backup file
 set number              " show line numbers
+set relativenumber      " turn on relative numbers
 set ruler               " show the current row and column
 
 set hlsearch            " highlight searches
