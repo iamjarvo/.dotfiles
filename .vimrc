@@ -74,6 +74,8 @@ autocmd ColorScheme * highlight Visual ctermbg=236
 if (&t_Co == 256 || has('gui_running'))
   if ($TERM_PROGRAM == 'iTerm.app')
     colorscheme vividchalk
+    colorscheme Tomorrow-Night-Bright
+    set guifont=Inconsolata-g\ for\ Powerline:h18
   endif
 endif
 set background="dark"
