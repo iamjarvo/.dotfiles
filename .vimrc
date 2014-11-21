@@ -69,16 +69,16 @@ set novisualbell        " turn off visual bell
 set backspace=indent,eol,start  " make that backspace key work the way it should
 
 " colors
-autocmd ColorScheme * highlight Visual ctermbg=236
+" autocmd ColorScheme * highlight Normal ctermbg=0
+" autocmd ColorScheme * highlight Visual ctermbg=0
 " gui settings
-if (&t_Co == 256 || has('gui_running'))
-  if ($TERM_PROGRAM == 'iTerm.app')
-    colorscheme vividchalk
-    colorscheme Tomorrow-Night-Bright
+"if (&t_Co == 256 || has('gui_running'))
+  colorscheme Tomorrow-Night-Eighties
+"  if ($TERM_PROGRAM == 'iTerm.app')
     set guifont=Inconsolata-g\ for\ Powerline:h18
-  endif
-endif
-set background="dark"
+"  endif
+"endif
+"set background="dark"
 syntax on               " turn syntax highlighting on by default
 
 filetype on             " detect type of file
@@ -141,3 +141,4 @@ iabbr bpry require'pry';binding.pry
 imap <C-t> <Plug>snipMateNextOrTrigger
 
 set colorcolumn=81
+set t_ut=
