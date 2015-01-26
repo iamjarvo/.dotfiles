@@ -8,7 +8,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'bling/vim-airline'
+" Plugin 'bling/vim-airline'
 Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'fatih/vim-go'
@@ -16,22 +16,30 @@ Plugin 'fortes/vim-railscasts'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'guns/vim-clojure-static'
 Plugin 'garbas/vim-snipmate'
+Plugin 'godlygeek/tabular'
 Plugin 'honza/vim-snippets'
+Plugin 'jgdavey/vim-blockle'
 Plugin 'kaichen/vim-snipmate-ruby-snippets'
+Plugin 'kana/vim-textobj-user'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'rking/ag.vim'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'slim-template/vim-slim'
+Plugin 'thoughtbot/vim-rspec'
 Plugin 'tomtom/tlib_vim'
+Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-classpath'
+Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-fugitive'
@@ -41,7 +49,8 @@ Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-vividchalk'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'vim-scripts/paredit.vim'
+" Plugin 'vim-scripts/paredit.vim'
+Plugin 'flazz/vim-colorschemes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -68,12 +77,17 @@ set novisualbell        " turn off visual bell
 
 set backspace=indent,eol,start  " make that backspace key work the way it should
 
+
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+set list
+
+
 " colors
 " autocmd ColorScheme * highlight Normal ctermbg=0
 " autocmd ColorScheme * highlight Visual ctermbg=0
 " gui settings
 "if (&t_Co == 256 || has('gui_running'))
-  colorscheme Tomorrow-Night-Eighties
+  colorscheme vividchalk
 "  if ($TERM_PROGRAM == 'iTerm.app')
     set guifont=Inconsolata-g\ for\ Powerline:h18
 "  endif
@@ -117,20 +131,23 @@ let g:rbpt_colorpairs = [
 let g:rbpt_max = len(g:rbpt_colorpairs)
 
 " unhighlight searches
-nmap nh :noh<CR>
+nmap <Leader>nh :noh<CR>
 
 nmap ig :IndentGuidesToggle<CR>
 
 " The Silver Searcher
 let g:ag_binary = system("which ag | xargs echo -n")
+let g:ctrlp_max_height = 100
+let g:ctrlp_use_caching = 0
 if filereadable(g:ag_binary)
   let g:ackprg = g:ag_binary . ' --nocolor --nogroup --column'
-    let g:ctrlp_user_command = g:ag_binary . ' %s -l --nocolor -g ""'
+  let g:ctrlp_user_command = g:ag_binary . ' %s -l --nocolor -g ""'
 endif
+let g:ctrlp_working_path_mode = ''
 
 " vim-airline
 set laststatus=2
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
 set term=xterm-256color " need this for airline to work in tmux
 
 iabbr bpry require'pry';binding.pry
@@ -140,5 +157,12 @@ iabbr bpry require'pry';binding.pry
 " snipmate
 imap <C-t> <Plug>snipMateNextOrTrigger
 
+colorscheme vividchalk
 set colorcolumn=81
 set t_ut=
+
+runtime macros/matchit.vim
+nmap <Leader>c gcc
+
+
+" let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files --exclude=*cassettes*.yml']
