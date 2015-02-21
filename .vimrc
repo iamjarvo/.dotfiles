@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
 " Plugin 'bling/vim-airline'
+Plugin 'chriskempson/base16-vim'
 Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'fatih/vim-go'
@@ -86,7 +87,7 @@ set list
 " autocmd ColorScheme * highlight Visual ctermbg=0
 " gui settings
 "if (&t_Co == 256 || has('gui_running'))
-  colorscheme vividchalk
+  " colorscheme base16-apathy
 "  if ($TERM_PROGRAM == 'iTerm.app')
     set guifont=Inconsolata-g\ for\ Powerline:h18
 "  endif
@@ -156,7 +157,7 @@ iabbr bpry require'pry';binding.pry
 " snipmate
 imap <C-t> <Plug>snipMateNextOrTrigger
 
-colorscheme vividchalk
+colorscheme base16-eighties
 set colorcolumn=81
 set t_ut=
 
