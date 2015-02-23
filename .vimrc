@@ -171,3 +171,8 @@ nmap <Leader>c gcc
 map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
 map <Leader>P :set paste<CR>O<esc>"*]p:set nopaste<cr>
 
+" open vimrc in tabe
+map <Leader>vi :tabe ~/.vimrc<CR>
+
+" reload vimrc
+map <Leader>r :source ~/.vimrc<CR>
