@@ -166,3 +166,8 @@ nmap <Leader>c gcc
 
 
 " let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files --exclude=*cassettes*.yml']
+
+" automatically set paste
+map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
+map <Leader>P :set paste<CR>O<esc>"*]p:set nopaste<cr>
+
