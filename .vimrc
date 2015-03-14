@@ -23,7 +23,7 @@ Plug 'jgdavey/vim-blockle'
 Plug 'kaichen/vim-snipmate-ruby-snippets'
 Plug 'kana/vim-textobj-user'
 Plug 'kchmck/vim-coffee-script'
-Plug 'kien/ctrlp.vim'
+" Plug 'kien/ctrlp.vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'nathanaelkane/vim-indent-guides'
@@ -135,15 +135,6 @@ nmap <Leader>nh :noh<CR>
 
 nmap ig :IndentGuidesToggle<CR>
 
-" The Silver Searcher
-let g:ag_binary = system("which ag | xargs echo -n")
-let g:ctrlp_max_height = 100
-let g:ctrlp_use_caching = 0
-if filereadable(g:ag_binary)
-  let g:ackprg = g:ag_binary . ' --nocolor --nogroup --column'
-  let g:ctrlp_user_command = g:ag_binary . ' %s -l --nocolor -g ""'
-endif
-let g:ctrlp_working_path_mode = ''
 
 " vim-airline
 set laststatus=2
