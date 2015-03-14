@@ -47,7 +47,7 @@ Plug 'tpope/vim-leiningen'
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-rake'
 Plug 'tpope/vim-vividchalk'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 Plug 'vim-ruby/vim-ruby'
 " Plug 'vim-scripts/paredit.vim'
 Plug 'flazz/vim-colorschemes'
