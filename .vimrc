@@ -51,6 +51,7 @@ Plug 'tpope/vim-vividchalk'
 Plug 'vim-ruby/vim-ruby'
 " Plug 'vim-scripts/paredit.vim'
 Plug 'flazz/vim-colorschemes'
+Plug 'tpope/vim-vinegar'
 Plug 'markcornick/vim-bats'
 Plug 'rosstimson/bats.vim'
 
