@@ -54,6 +54,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'tpope/vim-vinegar'
 Plug 'markcornick/vim-bats'
 Plug 'rosstimson/bats.vim'
+Plug 'thoughtbot/pick.vim'
 
 " All of your Plugins must be added before the following line
 call plug#end()
@@ -138,6 +139,11 @@ nmap <Leader>nh :noh<CR>
 
 nmap ig :IndentGuidesToggle<CR>
 
+nnoremap <C-p> :call PickFile()<CR>
+nnoremap <Leader>s :call PickFileSplit()<CR>
+nnoremap <Leader>v :call PickFileVerticalSplit()<CR>
+nnoremap <Leader>t :call PickFileTab()<CR>
+nnoremap <Leader>b :call PickBuffer()<CR>
 
 " vim-airline
 set laststatus=2
