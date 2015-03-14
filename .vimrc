@@ -51,6 +51,8 @@ Plug 'tpope/vim-vividchalk'
 Plug 'vim-ruby/vim-ruby'
 " Plug 'vim-scripts/paredit.vim'
 Plug 'flazz/vim-colorschemes'
+Plug 'markcornick/vim-bats'
+Plug 'rosstimson/bats.vim'
 
 " All of your Plugins must be added before the following line
 call plug#end()
