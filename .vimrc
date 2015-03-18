@@ -55,6 +55,7 @@ Plug 'tpope/vim-vinegar'
 Plug 'markcornick/vim-bats'
 Plug 'rosstimson/bats.vim'
 Plug 'thoughtbot/pick.vim'
+Plug 'benmills/vimux'
 
 " All of your Plugins must be added before the following line
 call plug#end()
