@@ -3,6 +3,8 @@
 which -s brew && brew update
 which -s brew || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+brew tap caskroom/fonts
+
 formulae=(
   ag
   caskroom/cask/brew-cask
@@ -21,6 +23,9 @@ casks=(
   1password
   alfred
   dropbox
+  font-inconsolata
+  google-chrome
+  google-chrome-canary
   iterm2
   skype
   slack
